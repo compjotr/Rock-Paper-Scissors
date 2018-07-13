@@ -1,0 +1,45 @@
+rock_paper_scissors.cpp:50:59: error: unknown type name 'game'; did you mean 'name'?
+    account_name get_round_winner(char play1, char play2, game& g ){
+                                                          ^~~~
+                                                          name
+/usr/local/include/eosiolib/types.hpp:109:11: note: 'name' declared here
+   struct name {
+          ^
+rock_paper_scissors.cpp:69:41: error: unknown type name 'game'; did you mean 'name'?
+     account_name get_game_winner(const game& g) {
+                                        ^~~~
+                                        name
+/usr/local/include/eosiolib/types.hpp:109:11: note: 'name' declared here
+   struct name {
+          ^
+rock_paper_scissors.cpp:60:22: error: no member named 'host' in 'eosio::name'
+            return g.host;
+                   ~ ^
+rock_paper_scissors.cpp:65:22: error: no member named 'challenger' in 'eosio::name'
+            return g.challenger;
+                   ~ ^
+rock_paper_scissors.cpp:73:31: error: no member named 'round' in 'eosio::name'
+        for (int i = 0; i < g.round; i++) {
+                            ~ ^
+rock_paper_scissors.cpp:74:19: error: no member named 'round_winner' in 'eosio::name'
+            if (g.round_winner[i] == g.host) {
+                ~ ^
+rock_paper_scissors.cpp:74:40: error: no member named 'host' in 'eosio::name'
+            if (g.round_winner[i] == g.host) {
+                                     ~ ^
+rock_paper_scissors.cpp:76:26: error: no member named 'round_winner' in 'eosio::name'
+            } else if (g.round_winner[i] == g.foe) {
+                       ~ ^
+rock_paper_scissors.cpp:76:47: error: no member named 'foe' in 'eosio::name'
+            } else if (g.round_winner[i] == g.foe) {
+                                            ~ ^
+rock_paper_scissors.cpp:82:22: error: no member named 'host' in 'eosio::name'
+            return g.host;
+                   ~ ^
+rock_paper_scissors.cpp:84:22: error: no member named 'foe' in 'eosio::name'
+            return g.foe;
+                   ~ ^
+rock_paper_scissors.cpp:85:22: error: no member named 'round' in 'eosio::name'
+        } else if (g.round > 9 && host_score == foe_score) {
+                   ~ ^
+12 errors generated.
